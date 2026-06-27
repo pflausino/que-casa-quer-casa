@@ -14,5 +14,5 @@ window.WEDDING_CONFIG = {
   // Cole aqui a URL do seu Web App do Apps Script (termina em /exec).
   // Enquanto estiver vazio, o formulário roda em MODO DEMONSTRAÇÃO
   // (mostra os dados no console e não envia para lugar nenhum).
-  GOOGLE_SCRIPT_URL: "",
+  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbyiGgJjr2FLZ6zOg4ctNRDXomF5ISFjK2xqYLMKxt-gzMmKgYOXlNm4SyNpa3f_UkzH/exec",
 };
