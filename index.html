@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulo &amp; Jéssica · 16 · 08 · 2026</title>
+  <meta name="description" content="Confirme sua presença no casamento de Paulo & Jéssica — 16 de agosto de 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%9B%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Que Casa Quer Casa</p>
+      <div class="wreath" aria-hidden="true">
+        <span class="wreath__ring"></span>
+      </div>
+      <h1 class="hero__names">Paulo <span class="amp">&amp;</span> Jéssica</h1>
+      <p class="hero__date">16 · 08 · 2026</p>
+      <p class="hero__tag">Two paths, one destiny.</p>
+      <a class="btn btn--gold hero__cta" href="#rsvp">Confirmar presença</a>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">▾</div>
+  </header>
+
+  <main>
+    <!-- ===== HISTÓRIA / CONVITE ===== -->
+    <section class="section section--story" id="convite">
+      <div class="ornament">✦ ✦ ✦</div>
+      <h2 class="section__title">O Convite</h2>
+      <p class="story__text">
+        De guildas diferentes, mas da mesma Aliança. Depois de muitas
+        <em>side quests</em>, builds e maratonas, decidimos formar party
+        permanente. Será uma honra ter você ao nosso lado quando dissermos
+        o nosso definitivo <strong>“I love you / I know”</strong>.
+      </p>
+      <p class="story__sub">Venha celebrar conosco este novo capítulo.</p>
+    </section>
+
+    <!-- ===== DETALHES ===== -->
+    <section class="section section--details">
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">🗓️</div>
+          <h3>Quando</h3>
+          <p class="card__big">16 de Agosto</p>
+          <p>de 2026 · Domingo</p>
+          <p class="card__muted">Recepção a partir das 16h00</p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">👗</div>
+          <h3>Traje</h3>
+          <p class="card__big">Esporte fino</p>
+          <p>Elegante e confortável</p>
+          <p class="card__muted">Trajes de gala temáticos são bem-vindos ✨</p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">💛</div>
+          <h3>Confirmação</h3>
+          <p class="card__big">Até 16/07</p>
+          <p>Confirme com antecedência</p>
+          <p class="card__muted">Para organizarmos os lugares da mesa</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== LOCAL ===== -->
+    <section class="section section--venue" id="local">
+      <div class="ornament">✦ ✦ ✦</div>
+      <h2 class="section__title">A Cerimônia</h2>
+      <!-- EDITE AQUI: nome e endereço do local -->
+      <p class="venue__name" id="venue-name">Don Cordero · Grill &amp; Gourmet</p>
+      <p class="venue__addr" id="venue-addr">
+        Rua Exemplo, 123 — Bairro · Cidade/UF
+      </p>
+
+      <div class="map-frame">
+        <!--
+          EDITE AQUI: substitua o src abaixo pelo embed do seu endereço.
+          1. Abra o Google Maps e busque o local
+          2. Compartilhar > Incorporar um mapa > copie o link do iframe
+          Como atalho, o botão abaixo já abre a busca pelo nome do local.
+        -->
+        <iframe
+          id="venue-map"
+          title="Mapa do local da cerimônia"
+          src="https://www.google.com/maps?q=Don+Cordero+Grill+Gourmet&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+
+      <a class="btn btn--ghost" id="venue-link"
+         href="https://www.google.com/maps/search/?api=1&query=Don+Cordero+Grill+Gourmet"
+         target="_blank" rel="noopener">Abrir no Google Maps ↗</a>
+    </section>
+
+    <!-- ===== RSVP ===== -->
+    <section class="section section--rsvp" id="rsvp">
+      <div class="ornament">✦ ✦ ✦</div>
+      <h2 class="section__title">Confirme sua Presença</h2>
+      <p class="rsvp__intro">Preencha abaixo. Cada confirmação é um novo membro da nossa party. 🎲</p>
+
+      <form id="rsvp-form" class="rsvp" novalidate>
+        <div class="field">
+          <label for="fullname">Nome completo *</label>
+          <input type="text" id="fullname" name="fullname" autocomplete="name"
+                 placeholder="Seu nome completo" required />
+          <span class="field__error" data-for="fullname"></span>
+        </div>
+
+        <fieldset class="field field--inline">
+          <legend>Você vai comparecer? *</legend>
+          <div class="radios">
+            <label class="radio">
+              <input type="radio" name="attending" value="sim" required />
+              <span>Sim, com certeza! 🎉</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="attending" value="nao" />
+              <span>Infelizmente não poderei 💔</span>
+            </label>
+          </div>
+          <span class="field__error" data-for="attending"></span>
+        </fieldset>
+
+        <div class="counts" id="counts-block">
+          <div class="field field--counter">
+            <label for="adults">Acompanhantes adultos</label>
+            <p class="field__hint">Além de você (a partir de 11 anos)</p>
+            <div class="stepper" data-stepper>
+              <button type="button" class="stepper__btn" data-dec aria-label="Diminuir adultos">−</button>
+              <input type="number" id="adults" name="adults" min="0" max="20" value="0" inputmode="numeric" />
+              <button type="button" class="stepper__btn" data-inc aria-label="Aumentar adultos">+</button>
+            </div>
+          </div>
+
+          <div class="field field--counter">
+            <label for="children">Crianças (menores de 11 anos)</label>
+            <p class="field__hint">Quantas crianças virão com você</p>
+            <div class="stepper" data-stepper>
+              <button type="button" class="stepper__btn" data-dec aria-label="Diminuir crianças">−</button>
+              <input type="number" id="children" name="children" min="0" max="20" value="0" inputmode="numeric" />
+              <button type="button" class="stepper__btn" data-inc aria-label="Aumentar crianças">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Recado para os noivos (opcional)</label>
+          <textarea id="message" name="message" rows="3"
+                    placeholder="Deixe um voto, uma referência nerd ou um conselho de party 🐉"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--gold rsvp__submit" id="submit-btn">
+          Enviar confirmação
+        </button>
+
+        <p class="rsvp__status" id="rsvp-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__names">Paulo <span class="amp">&amp;</span> Jéssica</p>
+    <p class="footer__date">16 · 08 · 2026</p>
+    <p class="footer__easter">May the force be with us. Lok'tar ogar. 🃏</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
