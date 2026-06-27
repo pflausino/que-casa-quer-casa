@@ -1,4 +1,11 @@
 /**
+ * @OnlyCurrentDoc
+ *
+ * A anotação @OnlyCurrentDoc acima é ESSENCIAL: ela limita a permissão do
+ * script apenas a ESTA planilha (escopo não sensível). Sem ela, o Google pede
+ * acesso a "todas as suas planilhas" — uma permissão sensível que dispara o
+ * bloqueio "Este app foi bloqueado / app não verificado" na autorização.
+ *
  * Apps Script — recebe as confirmações de presença (RSVP) do site
  * e grava cada uma como uma nova linha na planilha do Google.
  *
